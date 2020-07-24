@@ -1,0 +1,81 @@
+/*
+ Theme Name:   Matrix Child
+ Theme URI:    chrislock.info
+ Description:  Matrix Child Theme
+ Author:       Chris Lock
+ Author URI:   chirslock.info
+ Template:     Matrix
+ Version:      1.0.0
+*/
+ 
+@import url("../Matrix/style.css");
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+.pagination {
+  position: inherit;
+}
+.tile-cat.themecolor {
+  background-color: transparent;
+}
+h2,
+#pg-content h2,
+#single h2 {
+  color: #99cc00;
+}
+p {
+  font-size: 1.8em;
+}
+.tile:hover .tile-cat {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/** phone styles **/
+@media all and (max-width:640px) {
+#sitename {
+  font-size: 5.2em;
+}
+}
+/** end phone styles **/
+#sitename{
+  font-family: 'Helvetica Neue';
+}
+/** hide slideshow in post **/
+article > .spf-content > .jetpack-slideshow {
+  display: none;
+  visibility: hidden;
+}
+/** end hide slideshow **/
+/** youtube embed **/
+.embed-youtube {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.embed-youtube iframe,  
+.embed-youtube object,  
+.embed-youtube embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;
+}
+/** end youtube embed **/
+
+/** slideshow @ top of page **/
+.flexslider.postslide,
+.flexslider.postslide img {
+  height: 400px;
+  margin: auto;
+  width: auto;
+}
